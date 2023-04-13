@@ -1,11 +1,11 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from "lit";
 
-const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
+const logo = new URL("../assets/open-wc-logo.svg", import.meta.url).href;
 
 class AudioClip extends LitElement {
   static properties = {
     header: { type: String },
-  }
+  };
 
   static styles = css`
     :host {
@@ -52,7 +52,7 @@ class AudioClip extends LitElement {
 
   constructor() {
     super();
-    this.header = 'My app';
+    this.header = "My app";
   }
 
   render() {
@@ -85,4 +85,4 @@ class AudioClip extends LitElement {
   }
 }
 
-customElements.define('audio-clip', AudioClip);
+customElements.define("audio-clip", AudioClip);
