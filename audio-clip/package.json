@@ -1,8 +1,8 @@
 {
-  "name": "audio-clip",
-  "description": "Webcomponent audio-clip following open-wc recommendations",
+  "name": "inline-audio",
+  "description": "Webcomponent inline-audio following open-wc recommendations",
   "license": "MIT",
-  "author": "audio-clip",
+  "author": "inline-audio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -16,7 +16,9 @@
     "start": "web-dev-server"
   },
   "dependencies": {
-    "lit": "^2.0.2"
+    "@lrnwebcomponents/simple-icon": "^4.2.0",
+    "lit": "^2.0.2",
+    "rollup-plugin-copy": "^3.4.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
@@ -35,7 +37,8 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.60.0",
     "rollup-plugin-esbuild": "^5.0.0",
-    "rollup-plugin-workbox": "^6.2.0"
+    "rollup-plugin-workbox": "^6.2.0",
+	"rollup-plugin-copy": "3.4.0"
   },
   "customElements": "custom-elements.json"
 }

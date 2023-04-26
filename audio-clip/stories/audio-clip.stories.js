@@ -1,18 +1,18 @@
-import { html } from 'lit';
-import '../src/audio-clip.js';
+import { html } from "lit";
+import "../src/audio-clip.js";
 
 export default {
-  title: 'AudioClip',
-  component: 'audio-clip',
+  title: "AudioClip",
+  component: "audio-clip",
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 };
 
 function Template({ title, backgroundColor }) {
   return html`
     <audio-clip
-      style="--audio-clip-background-color: ${backgroundColor || 'white'}"
+      style="--audio-clip-background-color: ${backgroundColor || "white"}"
       .title=${title}
     >
     </audio-clip>
@@ -21,5 +21,5 @@ function Template({ title, backgroundColor }) {
 
 export const App = Template.bind({});
 App.args = {
-  title: 'My app',
+  title: "My app",
 };

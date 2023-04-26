@@ -1,28 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="Description" content="Put your description here." />
+    <base href="/" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Put your description here.">
-  <base href="/">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
-    }
-  </style>
-  <title>audio-clip</title>
-</head>
+      html,
+      body {
+        font-family: sans-serif;
+        background-color: #ededed;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+      }
 
-<body>
-  <audio-clip></audio-clip>
+      .center {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 50px;
+      }
+    </style>
+    <title>Inline Audio Player</title>
+  </head>
 
-  <script type="module" src="./src/audio-clip.js"></script>
-</body>
+  <body>
+    <div class="center">
+      <p class="text">
+        hihihihihihihihihihihihihihihi
+        <audio-clip>Test Audio Clip.</audio-clip>
+        test field.
+      </p>
+    </div>
 
+    <script type="module" src="./src/audio-clip.js"></script>
+  </body>
 </html>
